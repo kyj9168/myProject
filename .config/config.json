@@ -3,7 +3,6 @@
   "local": {
     "DEBUG_LEVEL": "debug",
     "ELASTICSEARCH_HOST": [{"IP":"127.0.0.1","PORT":"6500"}],
-    "REACT_PORT":16100,
     "EXPRESS_PORT":6100
   }
 }
