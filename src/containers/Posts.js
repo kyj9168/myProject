@@ -1,16 +1,8 @@
-import React from 'react';
-import BigText from '../components/BigText';
-import PostLinks from '../components/PostLinks';
+import React from "react";
+// import BigText from "../components/BigText";
 
-const Posts = ({children}) => {
-    return (
-        <div>
-            <BigText>포스트</BigText>
-            <PostLinks/>
-            {children}
-        </div>
-        
-    );
+const Posts = ({ children }) => {
+    return <div className="container_div">{children}</div>;
 };
 
 export default Posts;
