@@ -18,10 +18,10 @@ app.use(
 app.use(bodyParser.json())
 
 
-app.use(basicAuth({
-  users: { 'admin': 'admin123!' },
-  challenge: true
-}))
+// app.use(basicAuth({
+//   users: { 'admin': 'admin123!' },
+//   challenge: true
+// }))
 app.use('/', express.static(path.resolve(__dirname, '../build')));
 app.use(express.static(path.join(__dirname, 'public')));
 app.use('/', indexRouter);
