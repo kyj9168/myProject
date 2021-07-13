@@ -7,7 +7,7 @@
 }
 
 .home,
-.reports,
+.chat,
 .products,
 .messages,
 .team,
@@ -24,7 +24,7 @@
 }
 
 .home.active,
-.reports.active,
+.chat.active,
 .products.active,
 .messages.active,
 .team.active,
