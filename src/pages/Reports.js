@@ -2,18 +2,7 @@ import React from "react";
 
 const Reports = (props) => {
     return (
-        <div
-            className="reports"
-            style={
-                props.sidebar
-                    ? {
-                          width: "calc(100% - 60px)",
-                      }
-                    : {
-                          width: "calc(100% - 175px)",
-                      }
-            }
-        >
+        <div className={props.sidebar ? "reports" : "reports active"}>
             <h1>Reports</h1>
         </div>
     );

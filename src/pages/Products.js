@@ -2,18 +2,7 @@ import React from "react";
 
 const Products = (props) => {
     return (
-        <div
-            className="products"
-            style={
-                props.sidebar
-                    ? {
-                          width: "calc(100% - 60px)",
-                      }
-                    : {
-                          width: "calc(100% - 175px)",
-                      }
-            }
-        >
+        <div className={props.sidebar ? "products" : "products active"}>
             <h1>Products</h1>
         </div>
     );

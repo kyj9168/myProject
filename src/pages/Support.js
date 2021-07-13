@@ -2,18 +2,7 @@ import React from "react";
 
 const Support = (props) => {
     return (
-        <div
-            className="support"
-            style={
-                props.sidebar
-                    ? {
-                          width: "calc(100% - 60px)",
-                      }
-                    : {
-                          width: "calc(100% - 175px)",
-                      }
-            }
-        >
+        <div className={props.sidebar ? "support" : "support active"}>
             <h1>Support</h1>
         </div>
     );

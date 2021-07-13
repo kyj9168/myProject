@@ -1,20 +1,12 @@
 import React from "react";
+import WordCloud from "../components/wordCloud";
 
 const Home = (props) => {
     return (
-        <div
-            className="home"
-            style={
-                props.sidebar
-                    ? {
-                          width: "calc(100% - 60px)",
-                      }
-                    : {
-                          width: "calc(100% - 175px)",
-                      }
-            }
-        >
-            <h1>Home</h1>
+        <div className={props.sidebar ? "home" : "home active"}>
+            <span className="homeSpan">My Skill Tree</span>
+
+            <WordCloud />
         </div>
     );
 };

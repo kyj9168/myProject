@@ -1,10 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
-
 * {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  font-family: 'Lato', sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato', sans-serif;
 }
 
 .home,
@@ -12,15 +11,30 @@
 .products,
 .messages,
 .team,
-.support
- {
-  display: flex;
-  height: calc(100vh - 60px);
-  align-items: center;
-  width: calc(100% - 60px);
-  justify-content: center;
-  right: 0px;
-  font-size: 3rem;
-  position: absolute;
-  transition: width 350ms;
+.support {
+    height: calc(100vh - 60px);
+    align-items: center;
+    width: calc(100% - 60px);
+    justify-content: center;
+    right: 0px;
+    font-size: 3rem;
+    position: absolute;
+    transition: width 350ms;
+    bottom: 0px;
+}
+
+.home.active,
+.reports.active,
+.products.active,
+.messages.active,
+.team.active,
+.support.active {
+    width: calc(100% - 175px);
+}
+
+.homeSpan {
+    display: inline-block;
+    position: absolute;
+    top: 20px;
+    left: 20px;
 }

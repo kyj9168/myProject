@@ -2,15 +2,17 @@ import React from "react";
 import * as AiIcons from "react-icons/ai";
 import { Link } from "react-router-dom";
 import { SidebarData } from "./SidebarData";
-import "./Navbar.css";
+import "./navbar.css";
 import { IconContext } from "react-icons";
 
 const Navbar = (props) => {
-    const showSidebar = () => props.setSidebar(!props.sidebar);
+    const showSidebar = () => {
+        props.setSidebar(!props.sidebar);
+    };
 
     return (
         <>
-            <IconContext.Provider value={{ color: "#fff"}}>
+            <IconContext.Provider value={{ color: "#fff" }}>
                 <div className="navbar"></div>
                 <nav className={props.sidebar ? "nav-menu active" : "nav-menu"}>
                     <ul className="nav-menu-items">
@@ -24,17 +26,13 @@ const Navbar = (props) => {
                                 src={
                                     process.env.PUBLIC_URL + "images/title.png"
                                 }
+                                alt="main"
                             />
                             <span
-                                className="titleSpan"
-                                style={
+                                className={
                                     props.sidebar
-                                        ? {
-                                              display: "none",
-                                          }
-                                        : {
-                                              display: "",
-                                          }
+                                        ? "titleSpan displayNone"
+                                        : "titleSpan"
                                 }
                             >
                                 /Project
@@ -49,22 +47,17 @@ const Navbar = (props) => {
                                             props.setSelectMenu(item.path)
                                         }
                                         className={
-                                            props.selectMenu == item.path
+                                            props.selectMenu === item.path
                                                 ? "menuA active"
                                                 : "menuA"
                                         }
                                     >
                                         {item.icon}
                                         <span
-                                            className="menuSpan"
-                                            style={
+                                            className={
                                                 props.sidebar
-                                                    ? {
-                                                          display: "none",
-                                                      }
-                                                    : {
-                                                          display: "",
-                                                      }
+                                                    ? "menuSpan displayNone"
+                                                    : "menuSpan"
                                             }
                                         >
                                             {item.title}
@@ -74,19 +67,17 @@ const Navbar = (props) => {
                             );
                         })}
 
-                        {props.sidebar ? (
-                            <Link to="#" className="menu-bars">
+                        <div className="menu-bars">
+                            {props.sidebar ? (
                                 <AiIcons.AiFillRightCircle
                                     onClick={showSidebar}
                                 />
-                            </Link>
-                        ) : (
-                            <Link to="#" className="menu-bars">
+                            ) : (
                                 <AiIcons.AiFillLeftCircle
                                     onClick={showSidebar}
                                 />
-                            </Link>
-                        )}
+                            )}
+                        </div>
                     </ul>
                 </nav>
             </IconContext.Provider>
