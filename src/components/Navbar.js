@@ -1,5 +1,4 @@
-import React, { useState } from "react";
-import * as FaIcons from "react-icons/fa";
+import React from "react";
 import * as AiIcons from "react-icons/ai";
 import { Link } from "react-router-dom";
 import { SidebarData } from "./SidebarData";
@@ -40,7 +39,17 @@ const Navbar = (props) => {
                         {SidebarData.map((item, index) => {
                             return (
                                 <li key={index} className={item.cName}>
-                                    <Link to={item.path}>
+                                    <Link
+                                        to={item.path}
+                                        onClick={() =>
+                                            props.setSelectMenu(item.path)
+                                        }
+                                        className={
+                                            props.selectMenu == item.path
+                                                ? "menuA active"
+                                                : "menuA"
+                                        }
+                                    >
                                         {item.icon}
                                         <span
                                             className="menuSpan"

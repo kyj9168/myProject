@@ -8,20 +8,47 @@ import Products from "./pages/Products";
 import Team from "./pages/Team";
 import Messages from "./pages/Messages";
 import Support from "./pages/Support";
+import { browserHistory } from "react-router";
 
 const App = () => {
-  const [sidebar, setSidebar] = useState(true);
+    const [sidebar, setSidebar] = useState(true);
+    const [selectMenu, setSelectMenu] = useState("/");
+
     return (
         <>
             <Router>
-                <Navbar setSidebar={setSidebar} sidebar = {sidebar}/>
+                <Navbar
+                    setSidebar={setSidebar}
+                    sidebar={sidebar}
+                    selectMenu={selectMenu}
+                    setSelectMenu={setSelectMenu}
+                />
                 <Switch>
-                    <Route path="/" exact render={() => <Home sidebar={sidebar} />} />
-                    <Route path="/reports"  render={() => <Reports sidebar={sidebar} />} />
-                    <Route path="/products" render={() => <Products sidebar={sidebar} />} />
-                    <Route path="/team" render={() => <Team sidebar={sidebar} />} />
-                    <Route path="/messages" render={() => <Messages sidebar={sidebar} />} />
-                    <Route path="/support" render={() => <Support sidebar={sidebar} />} />
+                    <Route
+                        path="/"
+                        exact
+                        render={() => <Home sidebar={sidebar} />}
+                    />
+                    <Route
+                        path="/reports"
+                        render={() => <Reports sidebar={sidebar} />}
+                    />
+                    <Route
+                        path="/products"
+                        render={() => <Products sidebar={sidebar} />}
+                    />
+                    <Route
+                        path="/team"
+                        render={() => <Team sidebar={sidebar} />}
+                    />
+                    <Route
+                        path="/messages"
+                        render={() => <Messages sidebar={sidebar} />}
+                    />
+                    <Route
+                        path="/support"
+                        render={() => <Support sidebar={sidebar} />}
+                    />
                 </Switch>
             </Router>
         </>

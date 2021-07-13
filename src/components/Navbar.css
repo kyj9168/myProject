@@ -61,6 +61,11 @@
     background-color: #000;
 }
 
+.menuA.active{
+    background-color: #000;
+
+}
+
 .nav-menu-items {
     width: 100%;
 }
