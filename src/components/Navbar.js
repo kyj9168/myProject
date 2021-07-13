@@ -6,18 +6,14 @@ import { SidebarData } from "./SidebarData";
 import "./Navbar.css";
 import { IconContext } from "react-icons";
 
-function Navbar() {
-    const [sidebar, setSidebar] = useState(true);
-
-    const showSidebar = () => setSidebar(!sidebar);
-
-    const refreshPage = () => window.location.reload();
+const Navbar = (props) => {
+    const showSidebar = () => props.setSidebar(!props.sidebar);
 
     return (
         <>
-            <IconContext.Provider value={{ color: "#fff" }}>
+            <IconContext.Provider value={{ color: "#fff", size: "25px" }}>
                 <div className="navbar"></div>
-                <nav className={sidebar ? "nav-menu active" : "nav-menu"}>
+                <nav className={props.sidebar ? "nav-menu active" : "nav-menu"}>
                     <ul className="nav-menu-items">
                         <Link className="navbar-toggle" to="/">
                             <img
@@ -29,7 +25,7 @@ function Navbar() {
                             <span
                                 className="titleSpan"
                                 style={
-                                    sidebar
+                                    props.sidebar
                                         ? {
                                               display: "none",
                                           }
@@ -49,7 +45,7 @@ function Navbar() {
                                         <span
                                             className="menuSpan"
                                             style={
-                                                sidebar
+                                                props.sidebar
                                                     ? {
                                                           display: "none",
                                                       }
@@ -65,7 +61,7 @@ function Navbar() {
                             );
                         })}
 
-                        {sidebar ? (
+                        {props.sidebar ? (
                             <Link to="#" className="menu-bars">
                                 <AiIcons.AiFillRightCircle
                                     onClick={showSidebar}
@@ -83,6 +79,6 @@ function Navbar() {
             </IconContext.Provider>
         </>
     );
-}
+};
 
 export default Navbar;

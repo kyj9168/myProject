@@ -1,11 +1,22 @@
-import React from 'react';
+import React from "react";
 
-function Products() {
-  return (
-    <div className='products'>
-      <h1>Products</h1>
-    </div>
-  );
-}
+const Products = (props) => {
+    return (
+        <div
+            className="products"
+            style={
+                props.sidebar
+                    ? {
+                          width: "calc(100% - 60px)",
+                      }
+                    : {
+                          width: "calc(100% - 175px)",
+                      }
+            }
+        >
+            <h1>Products</h1>
+        </div>
+    );
+};
 
 export default Products;

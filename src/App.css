@@ -15,8 +15,12 @@
 .support
  {
   display: flex;
-  height: 90vh;
+  height: calc(100vh - 60px);
   align-items: center;
+  width: calc(100% - 60px);
   justify-content: center;
+  right: 0px;
   font-size: 3rem;
+  position: absolute;
+  transition: width 350ms;
 }
