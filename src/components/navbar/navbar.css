@@ -1,5 +1,5 @@
 .navbar {
-    background-color: #12adb9;
+    background-color: #78A6A4;
     height: 60px;
     display: flex;
     justify-content: start;
@@ -38,7 +38,7 @@
 }
 
 .nav-menu {
-    background-color: #12adb9;
+    background-color: #78A6A4;
     width: 175px;
     height: 100vh;
     display: flex;
@@ -77,7 +77,7 @@
 }
 
 .nav-text a:hover {
-    background-color: #000;
+    background-color: #6D7D7B;
     animation-name: scale105;
     animation-duration: 1s;
     animation-iteration-count: infinite;
@@ -96,7 +96,7 @@
 }
 
 .menuA.active {
-    background-color: #000;
+    background-color: #6D7D7B;
 }
 
 .menuA svg {
@@ -109,7 +109,7 @@
 
 .navbar-toggle {
     text-decoration: none;
-    background-color: #000;
+    background-color: #78A6A4;
     width: 100%;
     height: 60px;
     display: flex;
@@ -123,8 +123,9 @@
 }
 
 .titleImg {
-    width: 40px;
-    margin-left: 10px;
+    height: 50px;
+    margin-left: 5px;
+    margin-top: 1px;
 }
 
 .titleSpan {

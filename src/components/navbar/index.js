@@ -24,19 +24,14 @@ const Navbar = (props) => {
                             <img
                                 className="titleImg"
                                 src={
-                                    process.env.PUBLIC_URL + "images/title.png"
+                                    props.sidebar
+                                        ? process.env.PUBLIC_URL +
+                                          "images/title.png"
+                                        : process.env.PUBLIC_URL +
+                                          "images/title2.png"
                                 }
                                 alt="main"
                             />
-                            <span
-                                className={
-                                    props.sidebar
-                                        ? "titleSpan displayNone"
-                                        : "titleSpan"
-                                }
-                            >
-                                /Project
-                            </span>
                         </Link>
                         {SidebarData.map((item, index) => {
                             return (
