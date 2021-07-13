@@ -10,11 +10,15 @@ const Navbar = (props) => {
 
     return (
         <>
-            <IconContext.Provider value={{ color: "#fff", size: "25px" }}>
+            <IconContext.Provider value={{ color: "#fff"}}>
                 <div className="navbar"></div>
                 <nav className={props.sidebar ? "nav-menu active" : "nav-menu"}>
                     <ul className="nav-menu-items">
-                        <Link className="navbar-toggle" to="/">
+                        <Link
+                            className="navbar-toggle"
+                            to="/"
+                            onClick={() => props.setSelectMenu("/")}
+                        >
                             <img
                                 className="titleImg"
                                 src={
