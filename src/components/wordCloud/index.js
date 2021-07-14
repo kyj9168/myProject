@@ -34,7 +34,7 @@ const wordCloud = () => {
     return (
         <>
             <div
-                style={{ width: "100%", height: "90%", position: "absolute" ,bottom:0 }}
+                style={{ width: "100%", height: "calc(100% - 80px)", position: "absolute" ,bottom:0 }}
             >
                 <ReactWordcloud
                     callbacks={callbacks}

@@ -12,7 +12,7 @@
 .messages,
 .team,
 .support {
-    height: calc(100vh - 60px);
+    height: calc(100% - 60px);
     align-items: center;
     width: calc(100% - 60px);
     justify-content: center;
