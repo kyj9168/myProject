@@ -22,14 +22,28 @@ const Navbar = (props) => {
                             onClick={() => props.setSelectMenu("/")}
                         >
                             <img
-                                className="titleImg"
                                 src={
-                                    props.sidebar
-                                        ? process.env.PUBLIC_URL +
-                                          "images/title.png"
-                                        : process.env.PUBLIC_URL +
-                                          "images/title2.png"
+                                    process.env.PUBLIC_URL + "images/title.png"
                                 }
+                                style={
+                                    props.sidebar
+                                        ? { width: "50px", opacity: 1 }
+                                        : { width: 0 }
+                                }
+                                className="titleImg"
+                                alt="main"
+                            />
+
+                            <img
+                                src={
+                                    process.env.PUBLIC_URL + "images/title2.png"
+                                }
+                                style={
+                                    props.sidebar
+                                        ? { width: 0 }
+                                        : { width: "150px", opacity: 1 }
+                                }
+                                className="titleImg2"
                                 alt="main"
                             />
                         </Link>

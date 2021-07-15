@@ -1,66 +1,66 @@
 export default [
     {
         text: "jQuery",
-        value: 1000,
+        value: 300,
     },
     {
         text: "JSP",
-        value: 1000,
+        value: 100,
     },
     {
         text: "Linux",
-        value: 1000,
+        value: 200,
     },
     {
         text: "AWS",
-        value: 1000,
+        value: 100,
     },
     {
         text: "Spring Boot",
-        value: 1000,
+        value: 100,
     },
     {
         text: "MY-SQL",
-        value: 1000,
+        value: 100,
     },
     {
         text: "Redis",
-        value: 1000,
+        value: 100,
     },
     {
         text: "Apache Kafka",
-        value: 1000,
+        value: 100,
     },
     {
         text: "Apache Nifi",
-        value: 1000,
+        value: 200,
     },
     {
         text: "ElasticSearch",
-        value: 1000,
+        value: 300,
     },
     {
         text: "React.js",
-        value: 1000,
+        value: 200,
     },
     {
         text: "HTML",
-        value: 1000,
+        value: 300,
     },
     {
-        text: "CSS3",
-        value: 1000,
+        text: "CSS",
+        value: 300,
     },
     {
         text: "Java",
-        value: 1000,
+        value: 100,
     },
     {
         text: "JavaScript",
-        value: 1000,
+        value: 300,
     },
     {
         text: "Node.js",
-        value: 1000,
+        value: 300,
     },
 ];

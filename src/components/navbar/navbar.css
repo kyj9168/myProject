@@ -8,6 +8,7 @@
     position: fixed;
     top: 0px;
     width: 100%;
+    display: none;
 }
 
 .menu-bars {
@@ -72,7 +73,8 @@
     height: 100%;
     display: flex;
     align-items: center;
-    padding-left: 9.5px;
+    padding-left: 9.4px;
+    padding-bottom: 0.5px;
     border-radius: 4px;
 }
 
@@ -119,13 +121,23 @@
 }
 
 .menuSpan {
-    margin-left: 16px;
+    width: 0px;
+    margin-left: 8%;
 }
 
 .titleImg {
-    height: 50px;
-    margin-left: 5px;
-    margin-top: 1px;
+    width: 50px;
+    margin-left: 4.5px;
+    margin-top: 0px;
+    opacity: 0;
+    transition: opacity 0.1s;
+}
+
+.titleImg2 {
+    width: 150px;
+    margin-left: 11px;
+    opacity: 0;
+    transition: opacity 0.1s;
 }
 
 .titleSpan {
