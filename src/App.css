@@ -11,7 +11,7 @@
 .products,
 .messages,
 .team,
-.support {
+.about {
     height: calc(100% - 60px);
     height: 100%;
     align-items: center;
@@ -29,7 +29,7 @@
 .products.active,
 .messages.active,
 .team.active,
-.support.active {
+.about.active {
     width: calc(100% - 175px);
 }
 

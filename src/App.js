@@ -7,7 +7,7 @@ import Chat from "./pages/Chat";
 import Products from "./pages/Products";
 import Team from "./pages/Team";
 import Messages from "./pages/Messages";
-import Support from "./pages/Support";
+import About from "./pages/About";
 
 const App = () => {
     const [sidebar, setSidebar] = useState(true);
@@ -45,8 +45,8 @@ const App = () => {
                         render={() => <Messages sidebar={sidebar} />}
                     />
                     <Route
-                        path="/support"
-                        render={() => <Support sidebar={sidebar} />}
+                        path="/about"
+                        render={() => <About sidebar={sidebar} />}
                     />
                 </Switch>
             </Router>
