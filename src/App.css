@@ -8,7 +8,7 @@
 
 .home,
 .chat,
-.products,
+.game,
 .messages,
 .team,
 .about {
@@ -26,7 +26,7 @@
 
 .home.active,
 .chat.active,
-.products.active,
+.game.active,
 .messages.active,
 .team.active,
 .about.active {

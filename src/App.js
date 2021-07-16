@@ -4,7 +4,7 @@ import Navbar from "./components/navbar";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Home from "./pages/Home";
 import Chat from "./pages/Chat";
-import Products from "./pages/Products";
+import Game from "./pages/Game";
 import Team from "./pages/Team";
 import Messages from "./pages/Messages";
 import About from "./pages/About";
@@ -33,8 +33,8 @@ const App = () => {
                         render={() => <Chat sidebar={sidebar} />}
                     />
                     <Route
-                        path="/products"
-                        render={() => <Products sidebar={sidebar} />}
+                        path="/game"
+                        render={() => <Game sidebar={sidebar} />}
                     />
                     <Route
                         path="/team"

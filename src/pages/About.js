@@ -3,70 +3,17 @@ import React from "react";
 const About = (props) => {
     return (
         <div className={props.sidebar ? "about" : "about active"}>
-            <p>김영준</p>
-            <p>1992.01.11</p>
-            <p>010-9001-6800</p>
-            <p>kyj9168@gmail.com</p>
-            <p>경기대학교(전자물리학과)</p>
-            <p>https://github.com/kyj9168</p>
-            <p></p>
-            <p></p>
-            <p>김영준</p>
-            <p>1992.01.11</p>
-            <p>010-9001-6800</p>
-            <p>kyj9168@gmail.com</p>
-            <p>경기대학교(전자물리학과)</p>
-            <p>https://github.com/kyj9168</p>
-            <p></p>
-            <p></p>
-            <p>김영준</p>
-            <p>1992.01.11</p>
-            <p>010-9001-6800</p>
-            <p>kyj9168@gmail.com</p>
-            <p>경기대학교(전자물리학과)</p>
-            <p>https://github.com/kyj9168</p>
-            <p></p>
-            <p></p>
-            <p>김영준</p>
-            <p>1992.01.11</p>
-            <p>010-9001-6800</p>
-            <p>kyj9168@gmail.com</p>
-            <p>경기대학교(전자물리학과)</p>
-            <p>https://github.com/kyj9168</p>
-            <p></p>
-            <p></p>
-            <p>김영준</p>
-            <p>1992.01.11</p>
-            <p>010-9001-6800</p>
-            <p>kyj9168@gmail.com</p>
-            <p>경기대학교(전자물리학과)</p>
-            <p>https://github.com/kyj9168</p>
-            <p></p>
-            <p></p>
-            <p>김영준</p>
-            <p>1992.01.11</p>
-            <p>010-9001-6800</p>
-            <p>kyj9168@gmail.com</p>
-            <p>경기대학교(전자물리학과)</p>
-            <p>https://github.com/kyj9168</p>
-            <p></p>
-            <p></p>
-            <p>김영준</p>
-            <p>1992.01.11</p>
-            <p>010-9001-6800</p>
-            <p>kyj9168@gmail.com</p>
-            <p>경기대학교(전자물리학과)</p>
-            <p>https://github.com/kyj9168</p>
-            <p></p>
-            <p></p>
-            <p>김영준</p>
-            <p>1992.01.11</p>
-            <p>010-9001-6800</p>
-            <p>kyj9168@gmail.com</p>
-            <p>경기대학교(전자물리학과)</p>
-            <p>https://github.com/kyj9168</p>
-            <p></p>
-            <p></p>
+            <iframe
+                src="http://192.168.1.146:6102/"
+                style={{
+                    width: "100%",
+                    height: "100%",
+                    border: "0px",
+                    position: "absolute",
+                    right: 0,
+                    bottom: 0,
+                }}
+            />
         </div>
     );
 };
