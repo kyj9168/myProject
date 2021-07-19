@@ -1,19 +1,11 @@
 import React from "react";
+import WordCloud from "../components/wordCloud";
 
 const About = (props) => {
     return (
         <div className={props.sidebar ? "about" : "about active"}>
-            <iframe
-                src="http://kyj9168.ddns.net:6102/"
-                style={{
-                    width: "100%",
-                    height: "100%",
-                    border: "0px",
-                    position: "absolute",
-                    right: 0,
-                    bottom: 0,
-                }}
-            />
+           <span className="homeSpan">My Skill Tree</span>
+            <WordCloud />
         </div>
     );
 };
