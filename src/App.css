@@ -18,7 +18,7 @@
     width: calc(100% - 60px);
     justify-content: center;
     right: 0px;
-    font-size: 3rem;
+    font-size: 2rem;
     position: absolute;
     transition: width 350ms;
     bottom: 0px;
