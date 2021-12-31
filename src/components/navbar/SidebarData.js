@@ -17,12 +17,12 @@ export const SidebarData = [
     icon: <BsIcons.BsFillChatDotsFill />,
     cName: 'nav-text'
   },
-  {
-    title: 'Game',
-    path: '/game',
-    icon: <IoIcons.IoLogoGameControllerB />,
-    cName: 'nav-text'
-  },
+  // {
+  //   title: 'Game',
+  //   path: '/game',
+  //   icon: <IoIcons.IoLogoGameControllerB />,
+  //   cName: 'nav-text'
+  // },
   // {
   //   title: 'Team',
   //   path: '/team',
@@ -35,10 +35,10 @@ export const SidebarData = [
   //   icon: <FaIcons.FaEnvelopeOpenText />,
   //   cName: 'nav-text'
   // },
-  {
-    title: 'About',
-    path: '/about',
-    icon: <FaIcons.FaUser />,
-    cName: 'nav-text'
-  }
+  // {
+  //   title: 'About',
+  //   path: '/about',
+  //   icon: <FaIcons.FaUser />,
+  //   cName: 'nav-text'
+  // }
 ];
