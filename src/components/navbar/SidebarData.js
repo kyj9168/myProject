@@ -17,12 +17,12 @@ export const SidebarData = [
     icon: <BsIcons.BsFillChatDotsFill />,
     cName: 'nav-text'
   },
-  // {
-  //   title: 'Game',
-  //   path: '/game',
-  //   icon: <IoIcons.IoLogoGameControllerB />,
-  //   cName: 'nav-text'
-  // },
+  {
+    title: 'Game',
+    path: '/game',
+    icon: <IoIcons.IoLogoGameControllerB />,
+    cName: 'nav-text'
+  },
   // {
   //   title: 'Team',
   //   path: '/team',
