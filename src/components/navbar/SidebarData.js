@@ -3,6 +3,7 @@ import * as FaIcons from 'react-icons/fa';
 import * as AiIcons from 'react-icons/ai';
 import * as IoIcons from 'react-icons/io';
 import * as BsIcons from 'react-icons/bs';
+import * as GiIcons from 'react-icons/gi';
 
 export const SidebarData = [
   {
@@ -18,9 +19,9 @@ export const SidebarData = [
     cName: 'nav-text'
   },
   {
-    title: 'Game',
-    path: '/game',
-    icon: <IoIcons.IoLogoGameControllerB />,
+    title: 'Diary',
+    path: '/Diary',
+    icon: <GiIcons.GiOpenBook />,
     cName: 'nav-text'
   },
   // {
