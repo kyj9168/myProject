@@ -36,18 +36,6 @@ const App = () => {
                         path="/diary"
                         render={() => <Diary sidebar={sidebar} />}
                     />
-                    <Route
-                        path="/team"
-                        render={() => <Team sidebar={sidebar} />}
-                    />
-                    <Route
-                        path="/messages"
-                        render={() => <Messages sidebar={sidebar} />}
-                    />
-                    <Route
-                        path="/about"
-                        render={() => <About sidebar={sidebar} />}
-                    />
                 </Switch>
             </Router>
         </>
