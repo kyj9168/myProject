@@ -9,6 +9,7 @@
 .home,
 .chat,
 .game,
+.diary
 .messages,
 .team,
 .about {
@@ -27,6 +28,7 @@
 .home.active,
 .chat.active,
 .game.active,
+.diary.active,
 .messages.active,
 .team.active,
 .about.active {
