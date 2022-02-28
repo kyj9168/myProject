@@ -22,9 +22,11 @@ app.use(bodyParser.json())
 //   users: { 'admin': 'admin123!' },
 //   challenge: true
 // }))
-app.use('/', express.static(path.resolve(__dirname, '../build')));
-app.use(express.static(path.join(__dirname, 'public')));
 app.use('/', indexRouter);
+app.use('/', express.static(path.resolve(__dirname, '../build')));
+app.use('/', express.static(path.resolve(__dirname, '../public')));
+
+
 
 app.listen(port, function () {
   console.log(`listening on port ${port}!`);
