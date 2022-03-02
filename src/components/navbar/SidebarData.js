@@ -20,7 +20,7 @@ export const SidebarData = [
   },
   {
     title: 'Diary',
-    path: '/Diary',
+    path: '/diary',
     icon: <GiIcons.GiOpenBook />,
     cName: 'nav-text'
   },

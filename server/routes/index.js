@@ -34,7 +34,7 @@ router.get('/chat', (req, res, next) => {
     res.sendFile(approot + '/build/index.html');
 });
 
-router.get('/Diary', (req, res, next) => {
+router.get('/diary', (req, res, next) => {
     let md = new MobileDetect(req.headers['user-agent']);
     console.log(
         `TIME:[${moment().format('yyyy-HH-mm hh:mm:ss')} ] IP:[${getIp(
