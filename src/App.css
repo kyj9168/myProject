@@ -21,7 +21,7 @@
     right: 0px;
     font-size: 2rem;
     position: absolute;
-    transition: width 350ms;
+    transition: width 100ms;
     bottom: 0px;
 }
 

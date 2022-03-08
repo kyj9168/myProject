@@ -47,13 +47,13 @@
     position: fixed;
     top: 0;
     left: 0;
-    transition: 350ms;
+    transition: 150ms;
     z-index: 10;
 }
 
 .nav-menu.active {
     width: 60px;
-    transition: 350ms;
+    transition: 150ms;
 }
 
 .nav-text {
